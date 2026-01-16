@@ -1,0 +1,34 @@
+{
+  "mistnosti": [
+    {
+      "nazev": "Kuchyne",
+      "propojeni": ["Ubytovna Skritku","Sklad darku"]
+    },{
+      "nazev": "Ubytovna Skritku",
+      "propojeni": ["Kuchyne","Santova dilna"]
+    },{
+      "nazev": "Sklad darku",
+      "propojeni": ["Kuchyne","Santova dilna","Staj Sobu"]
+    },{
+      "nazev": "Santova Dilna",
+      "propojeni": ["Ubytovna Skritku","Sklad darku","Strojovna","Zasnezeny les"]
+    },{
+      "nazev": "Staj sobu",
+      "propojeni": ["Sklad darku","Strojovna"]
+    },{
+      "nazev": "Strojovna",
+      "propojeni": ["Staj sobu","Santova Dilna"]
+    },{
+      "nazev": "Zasnezeny les",
+      "propojeni": ["Grinchova jeskyne","Santova dilna"]
+    },{
+      "nazev": "Grinchova jeskyne",
+      "propojeni": ["Zasnezeny les"]
+    }
+
+
+
+  ]
+
+}
+

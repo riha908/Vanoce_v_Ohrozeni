@@ -14,6 +14,7 @@ public class Konzole {
         mapa.put("jdi vychod", new Pohyb());
         mapa.put("jdi zapad", new Pohyb());
         mapa.put("pomoc",new Pomoc());
+        mapa.put("konec", new Konec());
     }
 
 

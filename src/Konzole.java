@@ -1,7 +1,5 @@
 import prikazy.*;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -11,12 +9,13 @@ public class Konzole {
     private Scanner scanner = new Scanner(System.in);
 
     private void inicializace() {
-mapa.put("jdi sever", new Pohyb());
+        mapa.put("jdi sever", new Pohyb());
         mapa.put("jdi jih", new Pohyb());
         mapa.put("jdi vychod", new Pohyb());
         mapa.put("jdi zapad", new Pohyb());
-        mapa.put("Pomoc",new Pomoc());
+        mapa.put("pomoc",new Pomoc());
     }
+
 
     private void proved() {
         System.out.print(">>");
@@ -28,6 +27,17 @@ mapa.put("jdi sever", new Pohyb());
         } else {
             System.out.println(">> Nedefinovany prikaz");
         }
-    }}
+    }
+    public void start() {
+       inicializace();
+                proved();
+        while (!exit);
+
+        }
+    }
+
+
+
+
 
 

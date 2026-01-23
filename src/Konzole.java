@@ -7,7 +7,7 @@ public class Konzole {
     private boolean exit = false;
     private HashMap<String, Command> mapa = new HashMap<>();
     private Scanner scanner = new Scanner(System.in);
-
+//mozne prikazy
     private void inicializace() {
         mapa.put("jdi sever", new Pohyb());
         mapa.put("jdi jih", new Pohyb());
@@ -17,7 +17,7 @@ public class Konzole {
         mapa.put("konec", new Konec());
     }
 
-
+//kotrola prikazu
     private void proved() {
         System.out.print(">>");
         String prikaz = scanner.next();
@@ -28,7 +28,7 @@ public class Konzole {
         } else {
             System.out.println(">> Nedefinovany prikaz");
         }
-    }
+    } //herni smycka
     public void start() {
        inicializace();
                 proved();

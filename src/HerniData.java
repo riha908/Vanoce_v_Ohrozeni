@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class HerniData {
 
     public ArrayList<Item> items;
-    public ArrayList<HerniCHarakteri> characters;
+    public ArrayList<HerniCharakteri> characters;
     public ArrayList<Oblast> locations;
 
     public static HerniData loadGameDataFromResources(String resourcePath) {

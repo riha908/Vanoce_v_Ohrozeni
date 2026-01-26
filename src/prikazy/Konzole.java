@@ -1,12 +1,14 @@
-import prikazy.*;
+package prikazy;
 
+import java.io.BufferedReader;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Konzole {
     private boolean exit = false;
     private HashMap<String, Command> mapa = new HashMap<>();
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
+    public static String batoh = "batoh.txt";
 //mozne prikazy
     private void inicializace() {
         mapa.put("jdi sever", new Pohyb());
@@ -15,27 +17,35 @@ public class Konzole {
         mapa.put("jdi zapad", new Pohyb());
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
+        mapa.put("inventar", new Inventar());
     }
 
-//kotrola prikazu
+
     private void proved() {
         System.out.print(">>");
-        String prikaz = scanner.next();
+        String prikaz = sc.next();
         prikaz = prikaz.trim().toLowerCase();
+
         if (mapa.containsKey(prikaz)) {
             System.out.println(">> " + mapa.get(prikaz).execute());
             exit = mapa.get(prikaz).exit();
-        } else {
+        }else {
             System.out.println(">> Nedefinovany prikaz");
         }
     } //herni smycka
     public void start() {
-       inicializace();
+        inicializace();
+        try {
+            do {
                 proved();
-        while (!exit);
-
+            } while (!exit);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
+
+    }
+
 
 
 

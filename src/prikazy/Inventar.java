@@ -5,6 +5,12 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Inventar extends Command{
+    public void sebratItem(){
+
+
+
+
+    }
     @Override
     public String execute() {
         ArrayList<String> list = new ArrayList<>();

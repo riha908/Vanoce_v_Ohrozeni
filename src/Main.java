@@ -8,10 +8,10 @@ public class Main {
         //Zkouška, zdali načtení proběhlo v pořádku
         //System.out.println("Items: " + data.items.size());
         //System.out.println("Characters: " + data.characters.size());
-        System.out.println("Locations: " + data.lokace.size());
+       // System.out.println("Locations: " + data.lokace.size());
 
         // Nalezení konkrétní lokace, se kterou je pak možno dále pracovat
-        System.out.println("Start lokace: " + data.findLocation("UbytovnaSkritku").getName());
+        System.out.println("Start lokace: " + data.findLocation("UbytovnaSkritku").getJmeno());
 
         Konzole k = new Konzole();
         k.start();

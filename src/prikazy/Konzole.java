@@ -18,6 +18,7 @@ public class Konzole {
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
         mapa.put("inventar", new Inventar());
+        mapa.put("promluvit",new Dialog());
     }
 
 

@@ -1,4 +1,4 @@
-package predmety;
+package Hra;
 
 public class Item {
 

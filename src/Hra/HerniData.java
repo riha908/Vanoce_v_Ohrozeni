@@ -36,10 +36,15 @@ public class HerniData {
         }
     }
     public Oblast findLocation(String id) {
+        if(lokace != null){
+
         for (Oblast o : lokace) {
-            if (o.getId().equals(id)){
+            if (o.getId().equals(id)) {
+                lokace.add(o);
                 return o;
             }
+        }
+
         }
         throw new IllegalArgumentException("Neexistuje mistnost s id: " + id);
     }

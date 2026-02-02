@@ -7,7 +7,7 @@ public class Oblast {
     private String id;
     private String jmeno;
     private String popis;
-    private ArrayList<String> location;
+    private ArrayList<String> lokace;
 
 
 
@@ -25,7 +25,7 @@ public class Oblast {
                 "id='" + id + '\'' +
                 ", name='" + jmeno + '\'' +
                 ", description='" + popis + '\'' +
-                ", neighbors=" + location +
+                ", neighbors=" + lokace +
                 '}';
     }
 }

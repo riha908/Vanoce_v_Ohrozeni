@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Oblast {
 
     private String id;
-    private String name;
-    private String description;
+    private String jmeno;
+    private String popis;
     private ArrayList<String> location;
 
 
@@ -14,15 +14,15 @@ public class Oblast {
     }
 
     public String getName() {
-        return name;
+        return jmeno;
     }
 
     @Override
     public String toString() {
         return "game.Location{" +
                 "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
+                ", name='" + jmeno + '\'' +
+                ", description='" + popis + '\'' +
                 ", neighbors=" + location +
                 '}';
     }

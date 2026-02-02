@@ -6,7 +6,7 @@ public class Oblast {
     private String name;
     private String description;
     private ArrayList<String> location;
-    private ArrayList<String> lootTable;
+
 
 
     public String getId() {
@@ -24,7 +24,6 @@ public class Oblast {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", neighbors=" + location +
-                ", lootTable=" + lootTable +
                 '}';
     }
 }

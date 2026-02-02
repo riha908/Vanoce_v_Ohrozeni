@@ -1,10 +1,10 @@
 package prikazy;
 
-import java.io.BufferedReader;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Konzole {
+
     private boolean exit = false;
     private HashMap<String, Command> mapa = new HashMap<>();
     private Scanner sc = new Scanner(System.in);

@@ -4,13 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Inventar extends Command{
-    public void sebratItem(){
-
-
-
-
-    }
+public class Inventar extends Command {
     @Override
     public String execute() {
         ArrayList<String> list = new ArrayList<>();
@@ -21,7 +15,7 @@ public class Inventar extends Command{
             }
             return list.toString();
         }catch(Exception e){
-            return "Inventar nefunguje";
+            return "prikazy.Inventar nefunguje";
         }
     }
     @Override

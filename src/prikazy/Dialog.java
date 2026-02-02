@@ -11,4 +11,4 @@ public class Dialog extends Command {
         return false;
     }
 }
-}
+

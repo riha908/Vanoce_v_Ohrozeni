@@ -1,3 +1,5 @@
+package Hra;
+
 import com.google.gson.Gson;
 import postavy.HerniCharakteri;
 import java.io.InputStream;
@@ -24,7 +26,7 @@ public class HerniData {
                         " (zkontrolujte, že soubor je v src/main/resources).");
             }
 
-            //Přečte celý JSON a vytvoří instanci HerniData, naplní vlastnosti podle názvů klíčů v JSONU, vrátí se hotová třída HerniData
+            //Přečte celý JSON a vytvoří instanci Hra.HerniData, naplní vlastnosti podle názvů klíčů v JSONU, vrátí se hotová třída Hra.HerniData
             return gson.fromJson(
                     new InputStreamReader(is, StandardCharsets.UTF_8),
                     HerniData.class
@@ -33,8 +35,6 @@ public class HerniData {
             throw new RuntimeException("Chyba při načítání JSON: " + e.getMessage());
         }
     }
-
-
     public Oblast findLocation(String id) {
         for (Oblast o : lokace) {
             if (o.getId().equals(id)){

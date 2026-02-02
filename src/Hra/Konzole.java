@@ -1,4 +1,6 @@
-package prikazy;
+package Hra;
+
+import prikazy.*;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -9,6 +11,7 @@ public class Konzole {
     private HashMap<String, Command> mapa = new HashMap<>();
     private Scanner sc = new Scanner(System.in);
     public static String batoh = "batoh.txt";
+
 //mozne prikazy
     private void inicializace() {
         mapa.put("jdi sever", new Pohyb());

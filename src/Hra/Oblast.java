@@ -1,3 +1,5 @@
+package Hra;
+
 import java.util.ArrayList;
 
 public class Oblast {
@@ -13,7 +15,7 @@ public class Oblast {
         return id;
     }
 
-    public String getName() {
+    public String getJmeno() {
         return jmeno;
     }
 

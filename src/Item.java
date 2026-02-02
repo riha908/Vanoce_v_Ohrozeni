@@ -1,8 +1,8 @@
 public class Item {
 
     private String id;
-    private String name;
-    private String type;
-    private String description;
+    private String jmeno;
+    private String typ;
+    private String popis;
 
 }

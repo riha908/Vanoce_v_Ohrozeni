@@ -34,7 +34,26 @@
       "propojeni": ["Zasnezeny les"]
     }
 
+  ],
+  "itemy": [
+    {
+      "id": "naradi",
+      "nazev": "naradi",
+      "typ": "zbran"
 
+    },{
+      "id": "snehova koule",
+      "nazev": "naradi",
+      "typ": "zbran"
+    },{
+      "id": "jidlo",
+      "nazev":"jidlo",
+      "typ": "spotrebovatelny"
+    },{
+      "id": "stroje",
+      "nazev": "stroje",
+      "typ": "quest"
+    }
 
   ]
 

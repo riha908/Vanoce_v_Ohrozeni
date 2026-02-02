@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import postavy.HerniCharakteri;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -8,7 +9,7 @@ public class HerniData {
 
     public ArrayList<Item> items;
     public ArrayList<HerniCharakteri> characters;
-    public ArrayList<Oblast> locations;
+    public ArrayList<Oblast> lokace;
 
     public static HerniData loadGameDataFromResources(String resourcePath) {
         //Vytvoření objektu pro práci s JSON souborem
@@ -35,7 +36,7 @@ public class HerniData {
 
 
     public Oblast findLocation(String id) {
-        for (Oblast o : locations) {
+        for (Oblast o : lokace) {
             if (o.getId().equals(id)){
                 return o;
             }

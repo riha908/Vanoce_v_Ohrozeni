@@ -5,7 +5,7 @@ public class Oblast {
     private String id;
     private String name;
     private String description;
-    private ArrayList<String> neighbors;
+    private ArrayList<String> location;
     private ArrayList<String> lootTable;
 
 
@@ -23,7 +23,7 @@ public class Oblast {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", neighbors=" + neighbors +
+                ", neighbors=" + location +
                 ", lootTable=" + lootTable +
                 '}';
     }

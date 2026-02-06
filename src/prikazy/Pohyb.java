@@ -78,7 +78,7 @@ public class Pohyb implements Command {
 
 
     @Override
-    public String execute(String command) {
+    public String execute() {
         return "";
     }
 

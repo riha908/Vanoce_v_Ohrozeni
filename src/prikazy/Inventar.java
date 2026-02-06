@@ -8,12 +8,10 @@ import java.util.ArrayList;
 
 public class Inventar implements Command{
 
-    public String execute() {
 
-    }
 
     @Override
-    public String execute(String command) {
+    public String execute() {
         ArrayList<String> list = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(Konzole.batoh))) {
             String line = "";

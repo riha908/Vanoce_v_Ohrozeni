@@ -1,17 +1,15 @@
 package prikazy;
 
 public class Konec implements Command {
-    public String execute() {
 
-    }
 
     @Override
-    public String execute(String command) {
+    public String execute() {
         return " Program byl ukoncen";
     }
 
     @Override
     public boolean exit() {
-        return false;
+        return true;
     }
 }

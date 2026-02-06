@@ -1,7 +1,7 @@
 package prikazy;
 
 public interface Command {
-    String execute(String command);
+    String execute();
     boolean exit();
 
 

@@ -46,23 +46,52 @@
     {
       "id": "naradi",
       "nazev": "naradi",
-      "typ": "zbran"
+      "typ": "zbran",
+      "popis": ""
 
     },{
       "id": "snehova koule",
       "nazev": "naradi",
-      "typ": "zbran"
+      "typ": "zbran",
+      "popis": ""
     },{
       "id": "jidlo",
       "nazev":"jidlo",
-      "typ": "spotrebovatelny"
+      "typ": "spotrebovatelny",
+      "popis": ""
     },{
-      "id": "stroje",
-      "nazev": "stroje",
-      "typ": "quest"
+      "id": "soucast stroje",
+      "nazev": "soucast stroje",
+      "typ": "quest",
+      "popis": ""
     }
-
-  ]
+  ],
+  "postavy":[  {
+    "id": "elias",
+    "nazev": "Elias",
+    "role": "Hrac",
+    "lokace": "Ubytovna Skritku"
+  },{
+    "id": "santa Claus",
+    "nazev": "Santa Claus",
+"role": "npc",
+    "lokace": "Santova dilna"
+  },
+    {
+    "id": "technik",
+    "nazev": "Technik",
+      "role": "npc",
+      "lokace": "Strojovna"
+    },  {
+      "id": "skritci",
+      "nazev": "remeslnici",
+      "role": "npc",
+      "lokace": "SkladDarku"
+    }, { "id": "kuchar",
+       "nazev": "kuchar",
+        "role": "npc",
+        "lokace": "Kuchyne"}
+]
 
 }
 

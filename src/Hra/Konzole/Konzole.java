@@ -1,4 +1,4 @@
-package Hra;
+package Hra.Konzole;
 
 import prikazy.*;
 
@@ -12,7 +12,7 @@ public class Konzole {
     private Scanner sc = new Scanner(System.in);
     public static String batoh = "batoh.txt";
 
-//mozne prikazy
+        //mozne prikazy
     private void inicializace() {
         mapa.put("jdi sever", new Pohyb());
         mapa.put("jdi jih", new Pohyb());

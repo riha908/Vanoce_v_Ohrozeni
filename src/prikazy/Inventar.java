@@ -1,6 +1,6 @@
 package prikazy;
 
-import Hra.Konzole;
+import Hra.Konzole.Konzole;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

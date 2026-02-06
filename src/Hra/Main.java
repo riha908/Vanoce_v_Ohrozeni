@@ -1,5 +1,7 @@
 package Hra;
 
+import Hra.Konzole.Konzole;
+
 public class Main {
     public static void main(String[] args) {
 

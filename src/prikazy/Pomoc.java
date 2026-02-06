@@ -1,14 +1,14 @@
 package prikazy;
 
-public class Pomoc extends Command{
+public class Pomoc implements Command{
 
 
-        @Override
-        public String execute() {
+    @Override
+    public String execute(String command) {
             return "prikazy:jdi sever,jdi jih,jdi vychod,jdi zapad,konec,pomoc,inventar";
-        }
+    }
 
-        @Override
+    @Override
         public boolean exit() {
             return false;
         }

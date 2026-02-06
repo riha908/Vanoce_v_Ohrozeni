@@ -74,7 +74,7 @@
   },{
     "id": "santa Claus",
     "nazev": "Santa Claus",
-"role": "npc",
+    "role": "npc",
     "lokace": "Santova dilna"
   },
     {
@@ -87,7 +87,8 @@
       "nazev": "remeslnici",
       "role": "npc",
       "lokace": "SkladDarku"
-    }, { "id": "kuchar",
+    },
+    { "id": "kuchar",
        "nazev": "kuchar",
         "role": "npc",
         "lokace": "Kuchyne"}

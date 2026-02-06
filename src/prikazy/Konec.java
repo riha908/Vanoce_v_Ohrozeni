@@ -1,14 +1,17 @@
 package prikazy;
 
-public class Konec extends Command{
-    @Override
+public class Konec implements Command {
     public String execute() {
-        return "Program byl ukoncen";
+
+    }
+
+    @Override
+    public String execute(String command) {
+        return " Program byl ukoncen";
     }
 
     @Override
     public boolean exit() {
-        return true;
+        return false;
     }
 }
-

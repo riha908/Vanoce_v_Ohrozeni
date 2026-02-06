@@ -6,9 +6,14 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Inventar extends Command {
-    @Override
+public class Inventar implements Command{
+
     public String execute() {
+
+    }
+
+    @Override
+    public String execute(String command) {
         ArrayList<String> list = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(Konzole.batoh))) {
             String line = "";
@@ -20,8 +25,10 @@ public class Inventar extends Command {
             return "prikazy.Inventar nefunguje";
         }
     }
+
     @Override
     public boolean exit() {
         return false;
     }
+
 }

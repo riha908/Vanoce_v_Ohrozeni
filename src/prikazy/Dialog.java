@@ -1,12 +1,15 @@
 package prikazy;
 
-public class Dialog extends Command {
+public class Dialog implements Command{
+
+
+
+
     @Override
-    public String execute() {
+    public String execute(String command) {
         return "";
     }
 
-    @Override
     public boolean exit() {
         return false;
     }

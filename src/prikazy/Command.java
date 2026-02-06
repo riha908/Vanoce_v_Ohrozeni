@@ -1,13 +1,9 @@
 package prikazy;
 
-public abstract class Command {
+public interface Command {
+    String execute(String command);
+    boolean exit();
 
-    protected String prikaz;
 
-    public void setPrikaz(String prikaz) {
-        this.prikaz = prikaz;
-    }
 
-    public abstract String execute();
-
-    public abstract boolean exit();}
+}

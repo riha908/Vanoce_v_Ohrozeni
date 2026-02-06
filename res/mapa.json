@@ -7,31 +7,38 @@
     },{
       "id": "UbytovnaSkritku",
       "nazev": "Ubytovna Skritku",
-      "propojeni": ["Kuchyne","Santova dilna"]
+      "propojeni": ["Kuchyne","Santova dilna"],
+      "popis":"start"
     },{
       "id": "SkladDarku",
       "nazev": "Sklad darku",
-      "propojeni": ["Kuchyne","Santova dilna","Staj Sobu"]
+      "propojeni": ["Kuchyne","Santova dilna","Staj Sobu"],
+      "popis":""
     },{
       "id": "SantovaDilna",
       "nazev": "Santova Dilna",
-      "propojeni": ["Ubytovna Skritku","Sklad darku","Strojovna","Zasnezeny les"]
+      "propojeni": ["Ubytovna Skritku","Sklad darku","Strojovna","Zasnezeny les"],
+      "popis":""
     },{
       "id": "StajSobu",
       "nazev": "Staj sobu",
-      "propojeni": ["Sklad darku","Strojovna"]
+      "propojeni": ["Sklad darku","Strojovna"],
+      "popis":""
     },{
       "id": "Strojovna",
       "nazev": "Strojovna",
-      "propojeni": ["Staj sobu","Santova Dilna"]
+      "propojeni": ["Staj sobu","Santova Dilna"],
+      "popis":""
     },{
       "id": "ZasnezenyLes",
       "nazev": "Zasnezeny les",
-      "propojeni": ["Grinchova jeskyne","Santova dilna"]
+      "propojeni": ["Grinchova jeskyne","Santova dilna"],
+      "popis":""
     },{
       "id":"GrinchovaJeskyne",
       "nazev": "Grinchova jeskyne",
-      "propojeni": ["Zasnezeny les"]
+      "propojeni": ["Zasnezeny les"],
+      "popis": "mistnost s finalovym bosem"
     }
 
   ],

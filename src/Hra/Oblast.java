@@ -28,5 +28,17 @@ public class Oblast {
                 ", neighbors=" + lokace +
                 '}';
     }
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setJmeno(String name) {
+        this.jmeno = jmeno;
+    }
+
+    public void setDescription(String popis) {
+        this.popis = this.popis;
+    }
 }
+
 

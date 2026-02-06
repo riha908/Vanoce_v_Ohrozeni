@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Vanoce_v_Ohrozeni.iml" filepath="$PROJECT_DIR$/Vanoce_v_Ohrozeni.iml" />
-      <module fileurl="file://$PROJECT_DIR$/res.iml" filepath="$PROJECT_DIR$/res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jackson-demo.iml" filepath="$PROJECT_DIR$/jackson-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/res/res.iml" filepath="$PROJECT_DIR$/res/res.iml" />
     </modules>
   </component>
 </project>

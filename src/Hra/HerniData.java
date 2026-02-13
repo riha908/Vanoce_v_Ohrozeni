@@ -9,8 +9,6 @@ import java.util.ArrayList;
 
 public class HerniData {
 
-
-
     public ArrayList<Oblast> oblast;
 
     public static HerniData loadGameDataFromResources(String resourcePath) {

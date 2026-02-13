@@ -36,8 +36,8 @@ public class Pohyb implements Command {
             return "Hráč nemá nastavenou aktuální lokaci.";
         }
 
-        ArrayList<String> neighbors = current.getPropojeni();
-        if (neighbors == null || !neighbors.contains(targetId)) {
+        ArrayList<String> propojeni = current.getPropojeni();
+        if (propojeni == null || !propojeni.contains(targetId)) {
             return "Do této lokace se odsud dostat nemůžeš.\n\n" + describeCurrentLocation();
         }
 

@@ -1,5 +1,6 @@
 package Hra.Konzole;
 
+import Hra.HerniData;
 import postavy.Elias;
 import prikazy.*;
 
@@ -16,6 +17,8 @@ private Elias elias;
         //mozne prikazy
     private void inicializace() {
         mapa.put("jdi", new Pohyb(elias));
+        svet = HerniData.loadGameDataFromResources("/mapa.json");
+        elias = new Elias();
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
         mapa.put("inventar", new Inventar());

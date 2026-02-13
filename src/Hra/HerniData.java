@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class HerniData {
 
 
-    public ArrayList<HerniCharakteri> characters;
-    public ArrayList<Oblast> lokace;
+
+    public ArrayList<Oblast> oblast;
 
     public static HerniData loadGameDataFromResources(String resourcePath) {
         //Vytvoření objektu pro práci s JSON souborem
@@ -36,15 +36,13 @@ public class HerniData {
         }
     }//hledani lokace
     public Oblast findLocation(String id) {
-        if(lokace != null){
-
-        for (Oblast o : lokace) {
+        for (Oblast o : oblast) {
             if (o.getId().equals(id)) {
-                lokace.add(o);
+                oblast.add(o);
                 return o;
             }
         }
-        }
+
         throw new IllegalArgumentException("Neexistuje mistnost s id: " + id);
     }
 

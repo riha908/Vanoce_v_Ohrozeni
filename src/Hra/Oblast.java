@@ -8,9 +8,15 @@ public class Oblast {
     private String jmeno;
     private String popis;
     private ArrayList<String> propojeni;
-    private ArrayList<String> lokace;
 
 
+    public Oblast(String id, String jmeno, String popis, ArrayList<String> propojeni) {
+        this.id = id;
+        this.jmeno = jmeno;
+        this.popis = popis;
+        this.propojeni = propojeni;
+
+    }
 
     public String getId() {
         return id;
@@ -26,9 +32,7 @@ public class Oblast {
     public ArrayList<String> getPropojeni() {
         return propojeni;
     }
-    public ArrayList<String> getLokace() {
-        return lokace;
-    }
+
 
     @Override
     public String toString() {
@@ -36,20 +40,21 @@ public class Oblast {
                 "id='" + id + '\'' +
                 ", name='" + jmeno + '\'' +
                 ", description='" + popis + '\'' +
-                ", neighbors=" + lokace +
+                ", neighbors=" +
                 '}';
     }
-    public void setId(String id) {
-        this.id = id;
-    }
 
-    public void setJmeno(String name) {
-        this.jmeno = jmeno;
-    }
+        public void setId (String id){
+            this.id = id;
+        }
 
-    public void setDescription(String popis) {
-        this.popis = this.popis;
-    }
+        public void setJmeno (String name){
+            this.jmeno = jmeno;
+        }
+
+        public void setDescription (String popis){
+            this.popis = this.popis;
+        }
 
 
 }

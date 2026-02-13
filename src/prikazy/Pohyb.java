@@ -17,9 +17,9 @@ public class Pohyb implements Command {
         svet = HerniData.loadGameDataFromResources("/mapa.json");
     }
 
-    public Pohyb(Elias player, HerniData world) {
-        this.Elias = player;
-        this.svet = world;
+    public Pohyb(Elias Elias, HerniData svet) {
+        this.Elias = Elias;
+        this.svet = svet;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Pohyb implements Command {
         }
 
         String targetId = parts[1].trim();
-        Oblast current = Elias.getLocation();
+        Oblast current = Elias.getOblast();
         if (current == null) {
             return "Hráč nemá nastavenou aktuální lokaci.";
         }
@@ -42,14 +42,14 @@ public class Pohyb implements Command {
         }
 
        Oblast target = svet.findLocation(targetId);
-        Elias.setLocation(target);
+        Elias.setOblast(target);
 
         return "Přesunul/a ses do lokace: " + target.getJmeno() + "\n\n" + describeCurrentLocation();
 
     }
 
     private String describeCurrentLocation() {
-       Oblast loc = Elias.getLocation();
+       Oblast loc = Elias.getOblast();
         if (loc == null) {
             return "Hráč nemá nastavenou aktuální lokaci.";
         }
@@ -78,8 +78,6 @@ public class Pohyb implements Command {
         return result.trim();
 
     }
-
-
 
     @Override
     public boolean exit() {

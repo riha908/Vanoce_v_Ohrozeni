@@ -22,7 +22,7 @@ private Elias elias;
         mapa.put("jdi", new Pohyb(elias));
         svet = HerniData.loadGameDataFromResources("/mapa.json");
         elias = new Elias();
-        elias.setLocation(svet.findLocation("UbytovnaSkritku"));
+        elias.setOblast(svet.findLocation("UbytovnaSkritku"));
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
         mapa.put("inventar", new Inventar());

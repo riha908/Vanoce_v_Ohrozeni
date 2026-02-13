@@ -6,19 +6,19 @@ import Hra.Oblast;
 import java.util.ArrayList;
 
 public class Elias extends Charakteri{
-   private Oblast location;
+   private Oblast oblast;
    private ArrayList<Item> inventory;
 
    public Elias(){
       this.inventory = new ArrayList<>();
    }
 
-   public Oblast getLocation() {
-      return location;
+   public Oblast getOblast() {
+      return oblast;
    }
 
-   public void setLocation(Oblast location) {
-      this.location = location;
+   public void setOblast(Oblast oblast) {
+      this.oblast = oblast;
    }
 
    public ArrayList<Item> getInventory() {

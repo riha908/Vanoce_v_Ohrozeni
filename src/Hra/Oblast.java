@@ -7,6 +7,7 @@ public class Oblast {
     private String id;
     private String jmeno;
     private String popis;
+    private ArrayList<String> propojeni;
     private ArrayList<String> lokace;
 
 
@@ -17,6 +18,17 @@ public class Oblast {
 
     public String getJmeno() {
         return jmeno;
+    }
+
+    public String getPopis() {
+        return popis;
+    }
+    public ArrayList<String> getPropojeni() {
+        return propojeni;
+    }
+
+    public ArrayList<String> getLokace() {
+        return lokace;
     }
 
     @Override
@@ -39,6 +51,8 @@ public class Oblast {
     public void setDescription(String popis) {
         this.popis = this.popis;
     }
+
+
 }
 
 

@@ -1,18 +1,24 @@
 package prikazy;
 
+import Hra.HerniData;
+import Hra.Oblast;
+import postavy.Elias;
+
+import java.util.ArrayList;
+
 public class Pohyb implements Command {
 
-/*
-    private final Hrac player;
+
+    private final Elias Elias;
     private final HerniData world;
 
-    public Movement(Hrac player) {
-        this.hrac = hrac;
-        world = HerniData.loadGameDataFromResources("/gamedata.json");
+    public Pohyb(Elias Elias) {
+        this.Elias = Elias;
+        world = HerniData.loadGameDataFromResources("/mapa.json");
     }
 
-    public Movement(Hrac player, GameData world) {
-        this.player = player;
+    public Pohyb(Elias player, HerniData world) {
+        this.Elias = player;
         this.world = world;
     }
 
@@ -25,34 +31,34 @@ public class Pohyb implements Command {
         }
 
         String targetId = parts[1].trim();
-        Location current = player.getLocation();
+        Oblast current = Elias.getLocation();
         if (current == null) {
             return "Hráč nemá nastavenou aktuální lokaci.";
         }
 
-        ArrayList<String> neighbors = current.getNeighbors();
+        ArrayList<String> neighbors = current.getPropojeni();
         if (neighbors == null || !neighbors.contains(targetId)) {
             return "Do této lokace se odsud dostat nemůžeš.\n\n" + describeCurrentLocation();
         }
 
-        Location target = world.findLocation(targetId);
-        player.setLocation(target);
+       Oblast target = world.findLocation(targetId);
+        Elias.setLocation(target);
 
-        return "Přesunul/a ses do lokace: " + target.getName() + "\n\n" + describeCurrentLocation();
+        return "Přesunul/a ses do lokace: " + target.getJmeno() + "\n\n" + describeCurrentLocation();
 
     }
 
     private String describeCurrentLocation() {
-        Location loc = player.getLocation();
+       Oblast loc = Elias.getLocation();
         if (loc == null) {
             return "Hráč nemá nastavenou aktuální lokaci.";
         }
 
         String result = "";
-        result += "== " + loc.getName() + " ==\n";
-        result += loc.getDescription() + "\n\n";
+        result += "== " + loc.getJmeno() + " ==\n";
+        result += loc.getPopis() + "\n\n";
 
-        ArrayList<String> n = loc.getNeighbors();
+        ArrayList<String> n = loc.getPropojeni();
         if (n == null || n.isEmpty()) {
             result += "Odtud nevede žádná cesta.";
             return result.trim();
@@ -62,8 +68,8 @@ public class Pohyb implements Command {
 
         for (String id : n) {
             try {
-                Location target = world.findLocation(id);
-                result += " - " + id + " (" + target.getName() + ")\n";
+                Oblast target = world.findLocation(id);
+                result += " - " + id + " (" + target.getJmeno() + ")\n";
             } catch (Exception e) {
                 result += " - " + id + "\n";
             }
@@ -72,15 +78,8 @@ public class Pohyb implements Command {
         return result.trim();
 
     }
-*/
 
 
-
-
-    @Override
-    public String execute() {
-        return "";
-    }
 
     @Override
     public boolean exit() {

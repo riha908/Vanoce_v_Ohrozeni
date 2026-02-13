@@ -1,12 +1,13 @@
 package Hra.Konzole;
 
+import postavy.Elias;
 import prikazy.*;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Konzole {
-
+private Elias elias;
     private boolean exit = false;
     private HashMap<String, Command> mapa = new HashMap<>();
     private Scanner sc = new Scanner(System.in);
@@ -14,17 +15,14 @@ public class Konzole {
 
         //mozne prikazy
     private void inicializace() {
-        mapa.put("jdi sever", new Pohyb());
-        mapa.put("jdi jih", new Pohyb());
-        mapa.put("jdi vychod", new Pohyb());
-        mapa.put("jdi zapad", new Pohyb());
+        mapa.put("jdi", new Pohyb(elias));
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
         mapa.put("inventar", new Inventar());
         mapa.put("promluvit",new Dialog());
     }
 
-
+//kontroluje prikazy
     private void proved() {
         System.out.print(">>");
         String prikaz = sc.next();
@@ -36,7 +34,9 @@ public class Konzole {
         }else {
             System.out.println(">> Nedefinovany prikaz");
         }
-    } //herni smycka
+    }
+
+    //herni smycka
     public void start() {
         inicializace();
         try {

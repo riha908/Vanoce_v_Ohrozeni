@@ -3,7 +3,8 @@
     {
       "id": "Kuchyne",
       "nazev": "Kuchyne",
-      "propojeni": ["Ubytovna Skritku","Sklad darku"]
+      "propojeni": ["Ubytovna Skritku","Sklad darku"],
+      "popis": ""
     },{
       "id": "UbytovnaSkritku",
       "nazev": "Ubytovna Skritku",

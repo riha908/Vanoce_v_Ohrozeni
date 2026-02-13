@@ -22,7 +22,7 @@ private Elias elias;
         mapa.put("jdi", new Pohyb(elias));
         svet = HerniData.loadGameDataFromResources("/mapa.json");
         elias = new Elias();
-        elias.setLocation(svet.findLocation("Ubytovna Skritku"));
+        elias.setLocation(svet.findLocation("UbytovnaSkritku"));
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
         mapa.put("inventar", new Inventar());
@@ -31,15 +31,15 @@ private Elias elias;
 
 //kontroluje prikazy
     private void proved() {
-        System.out.print(">>");
+        System.out.print("> zadejte prikaz");
         String prikaz = sc.next();
         prikaz = prikaz.trim().toLowerCase();
 
         if (mapa.containsKey(prikaz)) {
-            System.out.println(">> " + mapa.get(prikaz).execute(prikaz));
+            System.out.println("> " + mapa.get(prikaz).execute(prikaz));
             exit = mapa.get(prikaz).exit();
         }else {
-            System.out.println(">> Nedefinovany prikaz");
+            System.out.println("> Nedefinovany prikaz");
         }
     }
 

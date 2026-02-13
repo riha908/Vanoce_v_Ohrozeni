@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class HerniData {
 
-    public ArrayList<Item> items;
+
     public ArrayList<HerniCharakteri> characters;
     public ArrayList<Oblast> lokace;
 
@@ -34,7 +34,7 @@ public class HerniData {
         } catch (Exception e) {
             throw new RuntimeException("Chyba při načítání JSON: " + e.getMessage());
         }
-    }
+    }//hledani lokace
     public Oblast findLocation(String id) {
         if(lokace != null){
 
@@ -44,7 +44,6 @@ public class HerniData {
                 return o;
             }
         }
-
         }
         throw new IllegalArgumentException("Neexistuje mistnost s id: " + id);
     }

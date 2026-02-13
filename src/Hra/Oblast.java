@@ -26,7 +26,6 @@ public class Oblast {
     public ArrayList<String> getPropojeni() {
         return propojeni;
     }
-
     public ArrayList<String> getLokace() {
         return lokace;
     }

@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Konzole {
+
+
+    private HerniData svet;
 private Elias elias;
     private boolean exit = false;
     private HashMap<String, Command> mapa = new HashMap<>();
@@ -19,6 +22,7 @@ private Elias elias;
         mapa.put("jdi", new Pohyb(elias));
         svet = HerniData.loadGameDataFromResources("/mapa.json");
         elias = new Elias();
+        elias.setLocation(svet.findLocation("Ubytovna Skritku"));
         mapa.put("pomoc",new Pomoc());
         mapa.put("konec", new Konec());
         mapa.put("inventar", new Inventar());

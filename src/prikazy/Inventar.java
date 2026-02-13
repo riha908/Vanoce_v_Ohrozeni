@@ -11,7 +11,7 @@ public class Inventar implements Command{
 
 
     @Override
-    public String execute() {
+public String execute(String command) {
         ArrayList<String> list = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(Konzole.batoh))) {
             String line = "";

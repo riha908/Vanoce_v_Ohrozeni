@@ -4,8 +4,8 @@ public class Konec implements Command {
 
 
     @Override
-    public String execute() {
-        return " Program byl ukoncen";
+    public String execute(String command) {
+        return "Program byl ukoncen";
     }
 
     @Override

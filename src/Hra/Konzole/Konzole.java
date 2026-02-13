@@ -36,7 +36,7 @@ private Elias elias;
         prikaz = prikaz.trim().toLowerCase();
 
         if (mapa.containsKey(prikaz)) {
-            System.out.println(">> " + mapa.get(prikaz).execute());
+            System.out.println(">> " + mapa.get(prikaz).execute(prikaz));
             exit = mapa.get(prikaz).exit();
         }else {
             System.out.println(">> Nedefinovany prikaz");
